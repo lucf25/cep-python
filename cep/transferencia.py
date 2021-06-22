@@ -20,6 +20,7 @@ class Transferencia:
     emisor: str
     receptor: str
     sello: str
+    cadena_original: str
 
     @classmethod
     def validar(
@@ -55,6 +56,7 @@ class Transferencia:
             emisor=emisor,
             receptor=receptor,
             sello=resp.get('sello'),
+            cadena_original=resp.get('cadenaCDA')
         )
         setattr(transferencia, '__client', client)
         return transferencia
