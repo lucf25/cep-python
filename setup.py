@@ -10,7 +10,7 @@ with open('README.md', 'r') as f:
 
 
 setup(
-    name='cepmex',
+    name='cepmex-bp',
     version=version.__version__,
     author='BanPAY',
     author_email='dev@banpay.com',
